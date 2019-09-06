@@ -2,9 +2,10 @@ pipeline {
   agent any
   stages {
     stage('Fluffy Build') {
+      agent any
       steps {
         echo 'Placeholder'
-        sh 'echo Another Placeholder'
+        sh 'echo Edited Placeholder'
       }
     }
     stage('Fluffy Test') {
